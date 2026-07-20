@@ -22,6 +22,8 @@ body{
     font-family:'Inter',sans-serif;
     background-color:#FFFFFF;
 
+     margin:0;
+    overflow-x:hidden;
 }
 
 nav{
@@ -95,43 +97,35 @@ nav ul li a{
     border-radius:10px;
 
      position:relative;
-    top:40px;
- 
+    top:30px;
 }
 
 
 /* Banner (Hero) Section */
-
 header{
 
     background:
-
     linear-gradient(
         35deg,
-        rgba(0,0,0,0.88) 8%,
-        rgba(0,0,0,0.68) 38%,
-        rgba(0,0,0,0.32) 68%,
-        rgba(0,0,0,0.08) 88%,
+        rgba(0,0,0,.88) 8%,
+        rgba(0,0,0,.68) 38%,
+        rgba(0,0,0,.32) 68%,
+        rgba(0,0,0,.08) 88%,
         transparent 100%
     ),
-
     url("./assets/banner.jpg");
-
-    min-height:90vh;
 
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
 
-    display:grid;
+    min-height:100vh;
+
+    display:flex;
     justify-content:center;
     align-items:center;
 
     padding:80px 20px;
-
-    margin-bottom:20px;
-    margin-top: 20px;
-
 }
 
 .take{
@@ -144,7 +138,7 @@ header{
 
     justify-items:center;
 
-    gap:80px;
+    gap:40px;
 
 }
 
@@ -631,7 +625,7 @@ footer{
     gap:15px;
 
 }
- @media screen and (max-width:768px){
+@media screen and (max-width:768px){
 
     nav{
         flex-direction:column;
@@ -641,6 +635,17 @@ footer{
     nav ul{
         flex-wrap:wrap;
         justify-content:center;
+        gap:12px;
+    }
+
+    header{
+        min-height:100vh;
+        padding:60px 20px;
+        background-position:center;
+    }
+
+    .take{
+        gap:40px;
     }
 
     .take h1{
@@ -649,6 +654,7 @@ footer{
 
     .take p{
         font-size:16px;
+        line-height:1.6;
     }
 
     .speakers{
@@ -659,15 +665,34 @@ footer{
         grid-template-columns:1fr;
     }
 
+    .pricing div{
+        width:100%;
+        min-height:auto;
+    }
+
+    .btnn2{
+        width:100%;
+    }
+
     .workshop_container{
         width:95%;
         padding:20px;
+        margin:60px auto;
+    }
+
+    .workshop_table_container{
+        overflow-x:auto;
     }
 
     .last{
         flex-direction:column;
         text-align:center;
         gap:20px;
+    }
+
+    .last ul{
+        justify-content:center;
+        flex-wrap:wrap;
     }
 
 }
