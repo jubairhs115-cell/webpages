@@ -94,6 +94,9 @@ nav ul li a{
 
     border-radius:10px;
 
+     position:relative;
+    top:40px;
+ 
 }
 
 
@@ -171,6 +174,7 @@ header{
 
 .take button{
 
+    margin-top: 50px;
     font-size:24px;
 
 }
